@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+    <Button
+        android:id="@+id/set_error_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_seterror"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/get_device_info_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/get_device_info"
+        android:gravity="center" />
+    
+    <Button
+        android:id="@+id/list_progress_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/list_progress"
+        android:gravity="center" />
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<resources>
+
+    <string name="app_name">AndroidStudyTools</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">AndroidStudyTools</string>
+
+    <!-- TextView set error -->
+    <string name="textview_seterror">1. TextView setError</string>
+    <string name="title_activity_set_error">SetErrorStudyTool</string>
+    <string name="button_submit">Submit</string>
+    <string name="empty_input_tips">Text can not be empty!</string>
+
+    <!-- Get device info -->
+    <string name="get_device_info">2. Get device info</string>
+    <string name="title_activity_get_device_info">GetDeviceInfoActivity</string>
+    <string name="model">Model: %1$s</string>
+    <string name="brand">Brand: %1$s</string>
+    <string name="name">Name: %1$s</string>
+    <string name="device">Device: %1$s</string>
+    <string name="manufacturer">Manufacturer: %1$s</string>
+    <string name="resolution">Screen Resolution Width: %1$d, Height: %2$d</string>
+    
+    <!-- List progress and menu -->
+    <string name="list_progress">3. List include progress item</string>
+    <string name="title_activity_list_progress">ListProgressActivity</string>
+    <string name="loading">Loading...</string>
+
+</resources>
