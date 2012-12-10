@@ -20,6 +20,8 @@ public class MainActivity extends Activity {
 
     private Button mBtnListProgressItem;
 
+    private Button mBtnSpeechRecognize;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +46,12 @@ public class MainActivity extends Activity {
         mBtnListProgressItem.setOnClickListener(new OnClickListener() {
             public void onClick(View arg0) {
                 startActivity(new Intent(MainActivity.this, ListProgressActivity.class));
+            }
+        });
+        mBtnSpeechRecognize = (Button)findViewById(R.id.speech_recognize_item);
+        mBtnSpeechRecognize.setOnClickListener(new OnClickListener() {
+            public void onClick(View arg0) {
+                startActivity(new Intent(MainActivity.this, SpeechRecognizeActivity.class));
             }
         });
     }

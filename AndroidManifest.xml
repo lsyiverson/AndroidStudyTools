@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.study.tools"
     android:versionCode="1"
@@ -12,7 +13,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name="com.study.tools.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme" >
             <intent-filter>
@@ -22,14 +23,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".items.SetErrorActivity"
+            android:name="com.study.tools.items.SetErrorActivity"
             android:label="@string/title_activity_set_error" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".items.GetDeviceInfoActivity"
+            android:name="com.study.tools.items.GetDeviceInfoActivity"
             android:configChanges="orientation|keyboard"
             android:label="@string/title_activity_get_device_info" >
             <intent-filter>
@@ -37,12 +38,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".items.ListProgressActivity"
+            android:name="com.study.tools.items.ListProgressActivity"
             android:label="@string/title_activity_list_progress"
             android:theme="@android:style/Theme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.study.tools.SpeechRecognizeActivity"
+            android:label="@string/title_activity_speech_recognize" >
         </activity>
     </application>
 
