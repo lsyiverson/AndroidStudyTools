@@ -12,6 +12,7 @@ import android.widget.Button;
 import com.study.tools.items.GetDeviceInfoActivity;
 import com.study.tools.items.ListProgressActivity;
 import com.study.tools.items.SetErrorActivity;
+import com.study.tools.items.SpeechRecognizeActivity;
 
 public class MainActivity extends Activity {
     private Button mBtnSetErrorTool;

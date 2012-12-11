@@ -46,7 +46,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.study.tools.SpeechRecognizeActivity"
+            android:name="com.study.tools.items.SpeechRecognizeActivity"
             android:label="@string/title_activity_speech_recognize" >
         </activity>
     </application>
