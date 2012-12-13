@@ -11,6 +11,7 @@ import android.widget.Button;
 
 import com.study.tools.items.GetDeviceInfoActivity;
 import com.study.tools.items.ListProgressActivity;
+import com.study.tools.items.NfcReaderActivity;
 import com.study.tools.items.SetErrorActivity;
 import com.study.tools.items.SpeechRecognizeActivity;
 
@@ -22,6 +23,8 @@ public class MainActivity extends Activity {
     private Button mBtnListProgressItem;
 
     private Button mBtnSpeechRecognize;
+
+    private Button mBtnNfcReader;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -53,6 +56,12 @@ public class MainActivity extends Activity {
         mBtnSpeechRecognize.setOnClickListener(new OnClickListener() {
             public void onClick(View arg0) {
                 startActivity(new Intent(MainActivity.this, SpeechRecognizeActivity.class));
+            }
+        });
+        mBtnNfcReader = (Button)findViewById(R.id.nfc_reader_item);
+        mBtnNfcReader.setOnClickListener(new OnClickListener() {
+            public void onClick(View arg0) {
+                startActivity(new Intent(MainActivity.this, NfcReaderActivity.class));
             }
         });
     }

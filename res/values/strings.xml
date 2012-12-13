@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="app_name">AndroidStudyTools</string>
@@ -20,16 +21,23 @@
     <string name="device">Device: %1$s</string>
     <string name="manufacturer">Manufacturer: %1$s</string>
     <string name="resolution">Screen Resolution Width: %1$d, Height: %2$d</string>
-    
+
     <!-- List progress and menu -->
     <string name="list_progress">3. List include progress item</string>
     <string name="title_activity_list_progress">ListProgressActivity</string>
     <string name="loading">Loading...</string>
-    
+
     <!-- Speech recognize -->
     <string name="speech_recognize">4. Speech recognize</string>
     <string name="title_activity_speech_recognize">SpeechRecognizeActivity</string>
     <string name="start_speak">Start speak</string>
     <string name="waiting_for_input">Waiting for input</string>
+    
+    <!-- Nfc reader -->
+    <string name="nfc_reader">5. Nfc reader</string>
+    <string name="title_activity_nfc_reader">NfcReaderActivity</string>
+    <string name="info">scanning...</string>
+    <string name="no_support_nfc">This device can not support nfc function.</string>
+    <string name="nfc_disable">Please turn on NFC.</string>
 
 </resources>

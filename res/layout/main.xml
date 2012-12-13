@@ -31,5 +31,12 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/speech_recognize" />
+    
+    <Button
+        android:id="@+id/nfc_reader_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/nfc_reader" />
 
 </LinearLayout>
