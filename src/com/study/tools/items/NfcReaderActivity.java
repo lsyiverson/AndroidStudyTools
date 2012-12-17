@@ -24,8 +24,16 @@ public class NfcReaderActivity extends Activity {
         setContentView(R.layout.nfc_reader);
         mNfcTagInfo = (TextView)findViewById(R.id.nfc_tag_info);
 
-        mNfcAdapter = NfcAdapter.getDefaultAdapter();
-        if (mNfcAdapter == null){
+        try {
+            mNfcAdapter = NfcAdapter.getDefaultAdapter();
+            if (mNfcAdapter == null){
+                throw new NullPointerException();
+            }
+        } catch (UnsupportedOperationException ex){
+            Toast.makeText(this, R.string.no_support_nfc, Toast.LENGTH_LONG).show();
+            finish();
+            return;
+        } catch (NullPointerException ex) {
             Toast.makeText(this, R.string.no_support_nfc, Toast.LENGTH_LONG).show();
             finish();
             return;
