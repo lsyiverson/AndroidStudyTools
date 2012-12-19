@@ -18,18 +18,22 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
-import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.study.tools.R;
 
 public class SpeechRecognizeActivity extends Activity {
-    private Button mBtnSpeak;
+    private ImageButton mBtnFind;
+
+    private ImageView mIvSpeak;
 
     private AutoCompleteTextView mTextView;
 
@@ -43,8 +47,18 @@ public class SpeechRecognizeActivity extends Activity {
     }
 
     private void setupViews() {
-        mBtnSpeak = (Button)findViewById(R.id.btn_speak);
-        mBtnSpeak.setOnClickListener(new OnClickListener() {
+        mBtnFind = (ImageButton)findViewById(R.id.btn_find);
+        mBtnFind.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                if (!TextUtils.isEmpty(mTextView.getText())) {
+                    Toast.makeText(SpeechRecognizeActivity.this, mTextView.getText(),
+                            Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        mIvSpeak = (ImageView)findViewById(R.id.iv_speak);
+        mIvSpeak.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View arg0) {
                 mTextView.setText("");

@@ -30,7 +30,7 @@
     <!-- Speech recognize -->
     <string name="speech_recognize">4. Speech recognize</string>
     <string name="title_activity_speech_recognize">SpeechRecognizeActivity</string>
-    <string name="start_speak">Start speak</string>
+    <string name="find">find</string>
     <string name="waiting_for_input">Waiting for input</string>
     <string name="no_voice_search_title">Notice</string>
     <string name="no_voice_search_msg">The speech recognize function need Google Voice Search to support, do you want to download now?</string>

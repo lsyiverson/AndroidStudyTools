@@ -1,24 +1,48 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:background="#FFFF00" >
 
-    <Button
-        android:id="@+id/btn_speak"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:gravity="center"
-        android:text="@string/start_speak" />
+        android:layout_margin="5dp"
+        android:background="#FFFFFF"
+        android:padding="3dp" >
 
-    <AutoCompleteTextView
-        android:id="@+id/edittext_input"
-        android:hint="@string/waiting_for_input"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@id/btn_speak"
-        android:singleLine="true" />
+        <ImageButton
+            android:id="@+id/btn_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:src="@android:drawable/ic_menu_search" />
 
-</RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_find" >
+
+            <AutoCompleteTextView
+                android:id="@+id/edittext_input"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:hint="@string/waiting_for_input"
+                android:paddingRight="32dp"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/iv_speak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@android:drawable/ic_btn_speak_now" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
