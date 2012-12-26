@@ -40,12 +40,20 @@
     <string name="no_market_msg">You cellphone isn\'t install any app store to handle the request. Do you want to download it through browser?</string>
     <string name="no_market_cancel">Cancel</string>
     <string name="no_market_download">Download through browser</string>
-    
+
     <!-- Nfc reader -->
     <string name="nfc_reader">5. Nfc reader</string>
     <string name="title_activity_nfc_reader">NfcReaderActivity</string>
     <string name="info">scanning...</string>
     <string name="no_support_nfc">This device can not support nfc function.</string>
     <string name="nfc_disable">Please turn on NFC.</string>
+
+    <!-- TabBar -->
+    <string name="tab_bar">6. Activity Tab</string>
+    <string name="title_activity_tab_bar">TabBarActivity</string>
+    <string name="tab1">Tab1</string>
+    <string name="tab2">Tab2</string>
+    <string name="title_activity_first">FirstActivity</string>
+    <string name="title_activity_second">SecondActivity</string>
 
 </resources>

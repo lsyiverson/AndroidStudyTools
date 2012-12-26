@@ -38,5 +38,12 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/nfc_reader" />
+    
+    <Button
+        android:id="@+id/tab_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/tab_bar" />
 
 </LinearLayout>

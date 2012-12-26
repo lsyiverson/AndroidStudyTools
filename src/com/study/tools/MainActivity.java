@@ -14,6 +14,7 @@ import com.study.tools.items.ListProgressActivity;
 import com.study.tools.items.NfcReaderActivity;
 import com.study.tools.items.SetErrorActivity;
 import com.study.tools.items.SpeechRecognizeActivity;
+import com.study.tools.items.TabBarActivity;
 
 public class MainActivity extends Activity {
     private Button mBtnSetErrorTool;
@@ -26,6 +27,8 @@ public class MainActivity extends Activity {
 
     private Button mBtnNfcReader;
 
+    private Button mBtnTabBar;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,32 +39,44 @@ public class MainActivity extends Activity {
     private void setupView() {
         mBtnSetErrorTool = (Button)findViewById(R.id.set_error_item);
         mBtnSetErrorTool.setOnClickListener(new OnClickListener() {
+            @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, SetErrorActivity.class));
             }
         });
         mBtnGetDeviceInfo = (Button)findViewById(R.id.get_device_info_item);
         mBtnGetDeviceInfo.setOnClickListener(new OnClickListener() {
+            @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, GetDeviceInfoActivity.class));
             }
         });
         mBtnListProgressItem = (Button)findViewById(R.id.list_progress_item);
         mBtnListProgressItem.setOnClickListener(new OnClickListener() {
+            @Override
             public void onClick(View arg0) {
                 startActivity(new Intent(MainActivity.this, ListProgressActivity.class));
             }
         });
         mBtnSpeechRecognize = (Button)findViewById(R.id.speech_recognize_item);
         mBtnSpeechRecognize.setOnClickListener(new OnClickListener() {
+            @Override
             public void onClick(View arg0) {
                 startActivity(new Intent(MainActivity.this, SpeechRecognizeActivity.class));
             }
         });
         mBtnNfcReader = (Button)findViewById(R.id.nfc_reader_item);
         mBtnNfcReader.setOnClickListener(new OnClickListener() {
+            @Override
             public void onClick(View arg0) {
                 startActivity(new Intent(MainActivity.this, NfcReaderActivity.class));
+            }
+        });
+        mBtnTabBar = (Button)findViewById(R.id.tab_item);
+        mBtnTabBar.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, TabBarActivity.class));
             }
         });
     }

@@ -7,8 +7,12 @@
     <uses-sdk
         android:minSdkVersion="10"
         android:targetSdkVersion="15" />
+
     <uses-permission android:name="android.permission.NFC" />
-    <uses-feature android:name="android.hardware.nfc" android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
 
     <application
         android:icon="@drawable/ic_launcher"
@@ -59,9 +63,25 @@
             <intent-filter>
                 <action android:name="android.nfc.action.TECH_DISCOVERED" />
             </intent-filter>
+
             <meta-data
                 android:name="android.nfc.action.TECH_DISCOVERED"
                 android:resource="@xml/nfc_tech_filter" />
+        </activity>
+        <activity
+            android:name="com.study.tools.items.TabBarActivity"
+            android:label="@string/title_activity_tab_bar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.ActivityGroup" />
+        </activity>
+        <activity
+            android:name="com.study.tools.items.FirstActivity"
+            android:label="@string/title_activity_first" >
+        </activity>
+        <activity
+            android:name="com.study.tools.items.SecondActivity"
+            android:label="@string/title_activity_second" >
         </activity>
     </application>
 
