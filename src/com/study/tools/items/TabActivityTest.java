@@ -4,11 +4,13 @@ package com.study.tools.items;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
+import android.widget.TextView;
 
 import com.study.tools.R;
-import com.study.tools.R.layout;
 
 public class TabActivityTest extends TabActivity {
 
@@ -31,7 +33,10 @@ public class TabActivityTest extends TabActivity {
         intent.setClass(TabActivityTest.this, clazz);
 
         TabSpec spec = mTabHost.newTabSpec(tag);
-        spec.setIndicator(tag, null);
+        View v = LayoutInflater.from(this).inflate(R.layout.nav_tab_layout, null);
+        ((TextView)v.findViewById(R.id.tab_name)).setText(tag);
+        spec.setIndicator(v);
+        //        spec.setIndicator(tag, d);
         spec.setContent(intent);
         mTabHost.addTab(spec);
     }
