@@ -14,7 +14,9 @@ import com.study.tools.items.ListProgressActivity;
 import com.study.tools.items.NfcReaderActivity;
 import com.study.tools.items.SetErrorActivity;
 import com.study.tools.items.SpeechRecognizeActivity;
+import com.study.tools.items.TabActivityTest;
 import com.study.tools.items.TabBarActivity;
+import com.study.tools.items.WSActivity;
 
 public class MainActivity extends Activity {
     private Button mBtnSetErrorTool;
@@ -28,6 +30,10 @@ public class MainActivity extends Activity {
     private Button mBtnNfcReader;
 
     private Button mBtnTabBar;
+
+    private Button mBtnTabActivityTest;
+
+    private Button mBtnWorkspace;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -77,6 +83,20 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, TabBarActivity.class));
+            }
+        });
+        mBtnTabActivityTest = (Button)findViewById(R.id.tab_activity_item);
+        mBtnTabActivityTest.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, TabActivityTest.class));
+            }
+        });
+        mBtnWorkspace = (Button)findViewById(R.id.workspace_item);
+        mBtnWorkspace.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, WSActivity.class));
             }
         });
     }

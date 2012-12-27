@@ -83,6 +83,17 @@
             android:name="com.study.tools.items.SecondActivity"
             android:label="@string/title_activity_second" >
         </activity>
+        <activity
+            android:name="com.study.tools.items.TabActivityTest"
+            android:label="@string/title_activity_tab_activity_test" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.TabActivity" />
+        </activity>
+        <activity
+            android:name="com.study.tools.items.WSActivity"
+            android:label="@string/title_activity_ws" >
+        </activity>
     </application>
 
 </manifest>

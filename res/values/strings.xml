@@ -55,5 +55,13 @@
     <string name="tab2">Tab2</string>
     <string name="title_activity_first">FirstActivity</string>
     <string name="title_activity_second">SecondActivity</string>
+    
+    <!-- TabActivity -->
+    <string name="tab_activity">7. Tab Activity Test</string>
+    <string name="title_activity_tab_activity_test">TabActivityTest</string>
+    
+    <!-- Workspace -->
+    <string name="workspace">8. Workspace</string>
+    <string name="title_activity_ws">WSActivity</string>
 
 </resources>
