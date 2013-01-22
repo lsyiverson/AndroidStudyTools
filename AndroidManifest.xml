@@ -94,6 +94,10 @@
             android:name="com.study.tools.items.WSActivity"
             android:label="@string/title_activity_ws" >
         </activity>
+        <activity
+            android:name="com.study.tools.items.ListInsertActivity"
+            android:label="@string/title_activity_list_insert" >
+        </activity>
     </application>
 
 </manifest>

@@ -10,13 +10,13 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 import com.study.tools.items.GetDeviceInfoActivity;
+import com.study.tools.items.ListInsertActivity;
 import com.study.tools.items.ListProgressActivity;
 import com.study.tools.items.NfcReaderActivity;
 import com.study.tools.items.SetErrorActivity;
 import com.study.tools.items.SpeechRecognizeActivity;
 import com.study.tools.items.TabActivityTest;
 import com.study.tools.items.TabBarActivity;
-import com.study.tools.items.WSActivity;
 
 public class MainActivity extends Activity {
     private Button mBtnSetErrorTool;
@@ -34,6 +34,8 @@ public class MainActivity extends Activity {
     private Button mBtnTabActivityTest;
 
     private Button mBtnWorkspace;
+
+    private Button mBtnListInsert;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -92,11 +94,11 @@ public class MainActivity extends Activity {
                 startActivity(new Intent(MainActivity.this, TabActivityTest.class));
             }
         });
-        mBtnWorkspace = (Button)findViewById(R.id.workspace_item);
-        mBtnWorkspace.setOnClickListener(new OnClickListener() {
+        mBtnListInsert = (Button)findViewById(R.id.list_item);
+        mBtnListInsert.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, WSActivity.class));
+                startActivity(new Intent(MainActivity.this, ListInsertActivity.class));
             }
         });
     }
