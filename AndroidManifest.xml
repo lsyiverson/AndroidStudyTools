@@ -98,6 +98,10 @@
             android:name="com.study.tools.items.ListInsertActivity"
             android:label="@string/title_activity_list_insert" >
         </activity>
+        <activity
+            android:name="com.study.tools.items.ViewPagerActivity"
+            android:label="@string/title_activity_view_pager" >
+        </activity>
     </application>
 
 </manifest>

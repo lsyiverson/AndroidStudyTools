@@ -17,6 +17,7 @@ import com.study.tools.items.SetErrorActivity;
 import com.study.tools.items.SpeechRecognizeActivity;
 import com.study.tools.items.TabActivityTest;
 import com.study.tools.items.TabBarActivity;
+import com.study.tools.items.ViewPagerActivity;
 
 public class MainActivity extends Activity {
     private Button mBtnSetErrorTool;
@@ -36,6 +37,8 @@ public class MainActivity extends Activity {
     private Button mBtnWorkspace;
 
     private Button mBtnListInsert;
+
+    private Button mBtnViewPager;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -99,6 +102,13 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, ListInsertActivity.class));
+            }
+        });
+        mBtnViewPager = (Button)findViewById(R.id.viewpager_item);
+        mBtnViewPager.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ViewPagerActivity.class));
             }
         });
     }

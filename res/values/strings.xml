@@ -69,5 +69,9 @@
     <string name="title_activity_list_insert">ListInsertActivity</string>
     <string name="insert_from_header">Insert from header</string>
     <string name="insert_from_footer">Insert from footer</string>
+    
+    <!-- ViewPager -->
+    <string name="viewpager">10. ViewPager</string>
+    <string name="title_activity_view_pager">ViewPagerActivity</string>
 
 </resources>
