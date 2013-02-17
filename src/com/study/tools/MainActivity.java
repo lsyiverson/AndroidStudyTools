@@ -18,6 +18,7 @@ import com.study.tools.items.SpeechRecognizeActivity;
 import com.study.tools.items.TabActivityTest;
 import com.study.tools.items.TabBarActivity;
 import com.study.tools.items.ViewPagerActivity;
+import com.study.tools.items.WSActivity;
 
 public class MainActivity extends Activity {
     private Button mBtnSetErrorTool;
@@ -95,6 +96,13 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, TabActivityTest.class));
+            }
+        });
+        mBtnWorkspace = (Button)findViewById(R.id.workspace_item);
+        mBtnWorkspace.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, WSActivity.class));
             }
         });
         mBtnListInsert = (Button)findViewById(R.id.list_item);
