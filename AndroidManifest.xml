@@ -102,6 +102,21 @@
             android:name="com.study.tools.items.ViewPagerActivity"
             android:label="@string/title_activity_view_pager" >
         </activity>
+        <receiver
+            android:name="com.study.tools.TestReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" >
+                </action>
+                <action android:name="android.intent.action.PACKAGE_CHANGED" >
+                </action>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" >
+                </action>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" >
+                </action>
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

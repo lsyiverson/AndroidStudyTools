@@ -1,77 +1,82 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:layout_height="match_parent" >
 
-    <Button
-        android:id="@+id/set_error_item"
-        android:layout_width="fill_parent"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/textview_seterror" />
+        android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/get_device_info_item"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/get_device_info" />
+        <Button
+            android:id="@+id/set_error_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/textview_seterror" />
 
-    <Button
-        android:id="@+id/list_progress_item"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/list_progress" />
+        <Button
+            android:id="@+id/get_device_info_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/get_device_info" />
 
-    <Button
-        android:id="@+id/speech_recognize_item"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/speech_recognize" />
-    
-    <Button
-        android:id="@+id/nfc_reader_item"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/nfc_reader" />
-    
-    <Button
-        android:id="@+id/tab_item"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/tab_bar" />
-    
-    <Button
-        android:id="@+id/tab_activity_item"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/tab_activity" />
-    
-    <Button
-        android:id="@+id/workspace_item"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/workspace" />
-    
-    <Button
-        android:id="@+id/list_item"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/list_insert" />
-    
-    <Button
-        android:id="@+id/viewpager_item"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/viewpager" />
+        <Button
+            android:id="@+id/list_progress_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/list_progress" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/speech_recognize_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/speech_recognize" />
+
+        <Button
+            android:id="@+id/nfc_reader_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/nfc_reader" />
+
+        <Button
+            android:id="@+id/tab_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tab_bar" />
+
+        <Button
+            android:id="@+id/tab_activity_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tab_activity" />
+
+        <Button
+            android:id="@+id/workspace_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/workspace" />
+
+        <Button
+            android:id="@+id/list_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/list_insert" />
+
+        <Button
+            android:id="@+id/viewpager_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/viewpager" />
+    </LinearLayout>
+
+</ScrollView>
