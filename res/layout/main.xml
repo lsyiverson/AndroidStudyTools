@@ -77,6 +77,13 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/viewpager" />
+        
+        <Button
+            android:id="@+id/actionbar_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/actionbar" />
     </LinearLayout>
 
 </ScrollView>

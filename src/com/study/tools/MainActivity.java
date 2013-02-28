@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+import com.study.tools.items.ActionBarActivity;
 import com.study.tools.items.GetDeviceInfoActivity;
 import com.study.tools.items.ListInsertActivity;
 import com.study.tools.items.ListProgressActivity;
@@ -40,6 +41,8 @@ public class MainActivity extends Activity {
     private Button mBtnListInsert;
 
     private Button mBtnViewPager;
+
+    private Button mBtnActionBar;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -117,6 +120,13 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, ViewPagerActivity.class));
+            }
+        });
+        mBtnActionBar = (Button)findViewById(R.id.actionbar_item);
+        mBtnActionBar.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ActionBarActivity.class));
             }
         });
     }

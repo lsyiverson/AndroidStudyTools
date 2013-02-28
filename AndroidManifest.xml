@@ -102,6 +102,11 @@
             android:name="com.study.tools.items.ViewPagerActivity"
             android:label="@string/title_activity_view_pager" >
         </activity>
+        <activity
+            android:name="com.study.tools.items.ActionBarActivity"
+            android:label="@string/title_activity_action_bar"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        </activity>
         <receiver
             android:name="com.study.tools.TestReceiver">
             <intent-filter>

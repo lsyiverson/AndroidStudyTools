@@ -25,7 +25,7 @@ public class NfcReaderActivity extends Activity {
         mNfcTagInfo = (TextView)findViewById(R.id.nfc_tag_info);
 
         try {
-            mNfcAdapter = NfcAdapter.getDefaultAdapter();
+            mNfcAdapter = NfcAdapter.getDefaultAdapter(this);
             if (mNfcAdapter == null){
                 throw new NullPointerException();
             }

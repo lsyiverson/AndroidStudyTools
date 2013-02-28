@@ -73,5 +73,9 @@
     <!-- ViewPager -->
     <string name="viewpager">10. ViewPager</string>
     <string name="title_activity_view_pager">ViewPagerActivity</string>
+    
+    <!-- ActionBar -->
+    <string name="actionbar">11. ActionBar</string>
+    <string name="title_activity_action_bar">ActionBar</string>
 
 </resources>
