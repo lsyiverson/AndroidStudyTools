@@ -4,6 +4,7 @@ package com.study.tools;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -51,6 +52,7 @@ public class MainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        Log.d("MainActivity", "lisy===========onCreate");
         setupView();
     }
 
@@ -137,8 +139,39 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, WebViewActivity.class));
+                finish();
             }
         });
+    }
+
+    @Override
+    protected void onDestroy() {
+        Log.d("MainActivity", "lisy===========onDestroy");
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onPause() {
+        Log.d("MainActivity", "lisy===========onPause");
+        super.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+        Log.d("MainActivity", "lisy===========onResume");
+        super.onResume();
+    }
+
+    @Override
+    protected void onStart() {
+        Log.d("MainActivity", "lisy===========onStart");
+        super.onStart();
+    }
+
+    @Override
+    protected void onStop() {
+        Log.d("MainActivity", "lisy===========onStop");
+        super.onStop();
     }
 
     @Override
