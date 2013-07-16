@@ -5,10 +5,11 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="10"
-        android:targetSdkVersion="15" />
+        android:minSdkVersion="9"
+        android:targetSdkVersion="9" />
 
     <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-feature
         android:name="android.hardware.nfc"
@@ -107,8 +108,12 @@
             android:label="@string/title_activity_action_bar"
             android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
         </activity>
-        <receiver
-            android:name="com.study.tools.TestReceiver">
+        <activity
+            android:name="com.study.tools.items.WebViewActivity"
+            android:label="@string/title_activity_web_view" >
+        </activity>
+
+        <receiver android:name="com.study.tools.TestReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.PACKAGE_ADDED" >
                 </action>
@@ -122,6 +127,7 @@
                 <data android:scheme="package" />
             </intent-filter>
         </receiver>
+
     </application>
 
 </manifest>

@@ -20,6 +20,7 @@ import com.study.tools.items.TabActivityTest;
 import com.study.tools.items.TabBarActivity;
 import com.study.tools.items.ViewPagerActivity;
 import com.study.tools.items.WSActivity;
+import com.study.tools.items.WebViewActivity;
 
 public class MainActivity extends Activity {
     private Button mBtnSetErrorTool;
@@ -43,6 +44,8 @@ public class MainActivity extends Activity {
     private Button mBtnViewPager;
 
     private Button mBtnActionBar;
+
+    private Button mBtnWebView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -127,6 +130,13 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, ActionBarActivity.class));
+            }
+        });
+        mBtnWebView = (Button)findViewById(R.id.webview_item);
+        mBtnWebView.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, WebViewActivity.class));
             }
         });
     }

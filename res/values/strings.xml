@@ -69,13 +69,18 @@
     <string name="title_activity_list_insert">ListInsertActivity</string>
     <string name="insert_from_header">Insert from header</string>
     <string name="insert_from_footer">Insert from footer</string>
-    
+
     <!-- ViewPager -->
     <string name="viewpager">10. ViewPager</string>
     <string name="title_activity_view_pager">ViewPagerActivity</string>
-    
+
     <!-- ActionBar -->
     <string name="actionbar">11. ActionBar</string>
     <string name="title_activity_action_bar">ActionBar</string>
+    
+    <!-- WebView -->
+    <string name="webview">12. WebView</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="submit">Enter</string>
 
 </resources>
