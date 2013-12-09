@@ -91,6 +91,13 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/webview" />
+
+        <Button
+            android:id="@+id/capture_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/capture" />
     </LinearLayout>
 
 </ScrollView>

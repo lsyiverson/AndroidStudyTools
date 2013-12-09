@@ -10,6 +10,31 @@
 
     <uses-permission android:name="android.permission.NFC" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <!-- TODO replace above two with next line after Android 4.2 -->
+    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <!-- This excludes Google TV, which is unfortunately included by virtue of not requiring a camera -->
+    <uses-feature android:name="android.hardware.touchscreen" />
+    <!-- TODO make this not required again after android.hardware.camera.any is available -->
 
     <uses-feature
         android:name="android.hardware.nfc"
@@ -112,6 +137,15 @@
             android:name="com.study.tools.items.WebViewActivity"
             android:label="@string/title_activity_web_view" >
         </activity>
+        <activity
+            android:name=".zxing.CaptureActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/Theme.Sherlock.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
 
         <receiver android:name="com.study.tools.TestReceiver" >
             <intent-filter>
@@ -127,7 +161,6 @@
                 <data android:scheme="package" />
             </intent-filter>
         </receiver>
-
     </application>
 
 </manifest>

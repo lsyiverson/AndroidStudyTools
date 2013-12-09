@@ -22,6 +22,7 @@ import com.study.tools.items.TabBarActivity;
 import com.study.tools.items.ViewPagerActivity;
 import com.study.tools.items.WSActivity;
 import com.study.tools.items.WebViewActivity;
+import com.study.tools.zxing.CaptureActivity;
 
 public class MainActivity extends Activity {
     private Button mBtnSetErrorTool;
@@ -47,6 +48,8 @@ public class MainActivity extends Activity {
     private Button mBtnActionBar;
 
     private Button mBtnWebView;
+
+    private Button mBtnCapture;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -139,7 +142,13 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, WebViewActivity.class));
-                finish();
+            }
+        });
+        mBtnCapture = (Button)findViewById(R.id.capture_item);
+        mBtnCapture.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, CaptureActivity.class));
             }
         });
     }
